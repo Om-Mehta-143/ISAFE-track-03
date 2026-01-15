@@ -1,0 +1,44 @@
+:root {
+  --bg-color: #0c0c0c;
+  --text-active: #e0e0e0;
+  --text-dim: #555;
+  --accent-red: #ff3333;
+  --accent-green: #33ff33;
+  --border-color: #333;
+  --font-mono: 'Courier New', Courier, monospace;
+  --font-serif: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-active);
+  font-family: var(--font-mono);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button {
+  font-family: inherit;
+  border: none;
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
